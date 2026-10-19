@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Bindy</title>
+  <desc id="desc">Зелёный знак Bindy в форме закрученного сердца</desc>
+  <rect width="128" height="128" rx="28" fill="#2D7B5D"/>
+  <path d="M64 108C39 108 19 89 19 64C19 39 36 19 57 19C73 19 82 24 91 24C106 24 116 36 116 51C116 67 104 79 88 79C75 79 65 69 65 57C65 47 72 39 81 39C89 39 95 45 95 53C95 59 91 63 86 63C82 63 79 60 79 56" stroke="#10261F" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M49 86C38 79 34 66 37 53C40 40 50 32 62 32C73 32 82 39 85 49" stroke="#10261F" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M44 31C53 24 64 21 78 24" stroke="#5AB97E" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+</svg>

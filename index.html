@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bindy — карта чистоты Ташкента. Найдите урну или сообщите о переполнении в один клик." />
+    <title>Bindy — Чистый город в один клик</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="page-noise"></div>
+    <header class="nav shell">
+      <a class="brand" href="#top" aria-label="Bindy — на главную">
+        <img src="assets/bindy-mark.png" alt="Логотип Bindy" />
+        <span>bindy</span>
+      </a>
+      <nav aria-label="Главное меню">
+        <a href="#how">Как это работает</a>
+        <a href="#partners">Для бизнеса</a>
+        <a href="#early-access">Тестировать</a>
+      </nav>
+      <a class="nav-cta" href="#early-access">Открыть PWA <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><i></i> Запускаемся в Ташкенте <span>·</span> Smart City PWA</div>
+          <h1>Чистый город<br /><em>в один клик.</em></h1>
+          <p class="hero-lead">Карта ближайших урн и умная камера, которая сама видит переполнения. Никаких приложений — просто откройте Bindy.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#early-access">Попробовать первым <b>→</b></a>
+            <a class="button button-ghost" href="#how"><span class="play">▶</span> Как это работает</a>
+          </div>
+          <div class="micro-proof">
+            <div class="avatar-row"><span>Д</span><span>М</span><span>А</span><span>+</span></div>
+            <p>Создаём карту чистоты<br />вместе с городом</p>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Макет приложения Bindy на телефоне">
+          <div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="float-tag tag-near"><span>●</span> Урна рядом</div>
+          <div class="float-tag tag-coins"><b>✦</b> +10 eco</div>
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-top"><span>9:41</span><span>● ● ●</span></div>
+              <div class="map-search">⌕&nbsp;&nbsp; Найти урну рядом <b>☰</b></div>
+              <div class="map-streets s1"></div><div class="map-streets s2"></div><div class="map-streets s3"></div>
+              <div class="map-label label-a">Шайхантахур</div><div class="map-label label-b">Ташкент</div>
+              <button class="pin pin-one" aria-label="Урна"><span>♜</span></button><button class="pin pin-two" aria-label="Урна"><span>♜</span></button><button class="pin pin-three" aria-label="Сообщить о переполнении"><span>!</span></button>
+              <div class="locate">◎</div>
+              <div class="map-sheet"><div class="sheet-handle"></div><small>Ближайшая точка</small><strong>Урна · 78 м</strong><p>ул. Алишера Навои, 20</p><button>Построить маршрут <span>→</span></button></div>
+              <div class="phone-nav"><span class="active">⌖<small>Карта</small></span><span>◎<small>Добавить</small></span><span>◉<small>Профиль</small></span></div>
+            </div>
+          </div>
+          <div class="ring-text">TASHKENT · CLEAN CITY · TASHKENT · CLEAN CITY ·</div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Найди урну, добавь точку, сделай город чище, получи eco-коины"><div class="ticker-track"><div class="ticker-group"><span>найди урну</span><b>✳</b><span>добавь точку</span><b>✳</b><span>сделай город чище</span><b>✳</b><span>получи eco-коины</span><b>✳</b></div><div class="ticker-group" aria-hidden="true"><span>найди урну</span><b>✳</b><span>добавь точку</span><b>✳</b><span>сделай город чище</span><b>✳</b><span>получи eco-коины</span><b>✳</b></div><div class="ticker-group" aria-hidden="true"><span>найди урну</span><b>✳</b><span>добавь точку</span><b>✳</b><span>сделай город чище</span><b>✳</b><span>получи eco-коины</span><b>✳</b></div></div></section>
+
+      <section class="intro shell" id="how">
+        <div class="section-kicker"><span>01</span> Почему Bindy</div>
+        <div class="intro-grid"><h2>Городская чистота<br />должна быть <em>видимой.</em></h2><p>Мы превращаем смартфоны горожан в сеть живых датчиков. Так чистота перестаёт быть чьей-то задачей — и становится общей суперсилой.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card card-mint"><div class="feature-icon cup">◒</div><span>ДЛЯ ГОРОЖАН</span><h3>Не носи стаканчик<br />ещё три квартала</h3><p>Открой карту и найди ближайшую урну за секунду.</p><a href="#early-access">Найти на карте <b>→</b></a></article>
+          <article class="feature-card card-ink"><div class="ai-orb"><i></i><i></i><i></i></div><span>VISION AI</span><h3>Один кадр.<br />Много пользы.</h3><p>ИИ сам определит: урна, переполнение, курилка или спам.</p><div class="speed">0.8 <small>сек</small><em>Проверка фото</em></div></article>
+          <article class="feature-card card-yellow"><div class="coin-stack"><i>✦</i><i>✦</i><i>✦</i></div><span>ECO-REWARDS</span><h3>Чистота<br />возвращается бонусами</h3><p>Добавляй точки и копи eco-коины на приятные городские находки.</p><a href="#early-access">Узнать про награды <b>→</b></a></article>
+        </div>
+      </section>
+
+      <section class="steps shell">
+        <div class="steps-heading"><div class="section-kicker"><span>02</span> Как это работает</div><h2>Три движения.<br /><em>Один чистый город.</em></h2></div>
+        <div class="step-list">
+          <article><div class="step-number">01</div><div class="step-icon camera">⌁</div><h3>Навёл и сфоткал</h3><p>Увидел урну или переполненный бак? Открой камеру прямо в браузере.</p></article>
+          <article><div class="step-number">02</div><div class="step-icon sparkle">✦</div><h3>ИИ всё проверил</h3><p>Наша модель распознаёт объект, его тип и текущее состояние за секунду.</p></article>
+          <article><div class="step-number">03</div><div class="step-icon city">⌂</div><h3>Город обновился</h3><p>Новая точка появляется на карте, а важный сигнал увидят нужные службы.</p></article>
+        </div>
+      </section>
+
+      <section class="signal"><div class="shell signal-grid"><div><div class="section-kicker light"><span>03</span> Не просто карта</div><h2>Каждое фото —<br /><em>сигнал городу.</em></h2><p>Bindy направляет данные туда, где они создают реальное изменение: на карту, в эко-аналитику или к ответственным бизнес-партнёрам.</p></div><div class="pipeline"><div class="input-photo"><span>▧</span><small>Фото горожанина</small></div><div class="pipeline-line"></div><div class="ai-core">✦<small>VISION<br />AI</small></div><div class="streams"><div><i class="dot green"></i><b>На карту</b><span>Новая урна</span></div><div><i class="dot orange"></i><b>В Eco Dashboard</b><span>Переполнение</span></div><div><i class="dot blue"></i><b>К партнёрам</b><span>Чистая зона</span></div></div></div></div></section>
+
+      <section class="partners shell" id="partners"><div class="partners-visual"><div class="city-map" aria-hidden="true"><span class="district district-one">Юнусабад</span><span class="district district-two">Чиланзар</span><span class="district district-three">Ташкент</span><i class="map-road road-a"></i><i class="map-road road-b"></i><i class="map-road road-c"></i><i class="map-road road-d"></i><b class="map-pin map-pin-one">⌖</b><b class="map-pin map-pin-two">⌖</b><b class="map-pin map-pin-three">⌖</b></div><div class="business-card"><span>YOUR PLACE</span><b>Кофе рядом<br />с чистотой</b><div><i></i><i></i><i></i></div></div><div class="route-line"></div><div class="walk-person">●<span>↗</span></div><div class="location-card"><small>ПАРТНЁР BINDY</small><b>☕ Cafè<br />Navoiy</b><span>Открыто · 90 м</span></div></div><div class="partners-copy"><div class="section-kicker"><span>04</span> Для бизнеса</div><h2>Превратите заботу<br />о городе в <em>гостей.</em></h2><p>Подсветите чистую зону, точку отдыха или курилку на карте Bindy. Встречайте людей прямо у своей двери — с выгодой для города и для вас.</p><ul><li><b>01</b> Выделенная точка на карте</li><li><b>02</b> Купоны и эко-награды для гостей</li><li><b>03</b> Понятная аналитика трафика</li></ul><a class="button button-dark" href="#early-access">Стать партнёром <b>→</b></a></div></section>
+
+      <section class="final-cta shell" id="early-access"><div class="final-inner"><img src="assets/bindy-mark.png" alt="Логотип Bindy" /><div class="eyebrow"><i></i> Альфа-тест уже скоро</div><h2>Давайте сделаем<br />Ташкент <em>чище.</em></h2><p>Оставьте Telegram или email — пригласим вас в первую волну тестирования Bindy.</p><form id="signup-form" action="https://formspree.io/f/xaeqzorn" method="POST"><input type="hidden" name="_subject" value="Новая заявка на альфа-тест Bindy" /><label class="sr-only" for="contact">Ваш Telegram или email</label><input id="contact" name="contact" type="text" required placeholder="Ваш Telegram или email" /><button type="submit">Присоединиться <span>→</span></button></form><div class="form-message" id="form-message" aria-live="polite"></div><small>Никакого спама. Только новости о запуске.</small></div></section>
+    </main>
+
+    <footer class="footer shell"><a class="brand" href="#top"><img src="assets/bindy-mark.png" alt="Логотип Bindy" /><span>bindy</span></a><p>© 2026 Bindy · Создано в Ташкенте</p><div><a href="https://www.instagram.com/zxsad1212">Instagram</a><a href="https://t.me/zxsad1212">Telegram</a></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

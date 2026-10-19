@@ -1,0 +1,160 @@
+/* Brand assets: SVG keeps the mark sharp and retains its full safe area. */
+.brand img,
+.final-inner > img {
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.brand img {
+  width: 32px;
+  height: 32px;
+}
+
+.final-inner > img {
+  width: 52px;
+  height: 52px;
+}
+
+.footer .brand img {
+  width: 29px;
+  height: 29px;
+}
+
+/* Stylized city map behind the partner route. */
+.partners-visual {
+  background-color: #dbe7d8;
+  background-image: linear-gradient(31deg, transparent 44%, rgba(255,255,255,.78) 45%, rgba(255,255,255,.78) 48%, transparent 49%), linear-gradient(112deg, transparent 43%, rgba(255,255,255,.8) 44%, rgba(255,255,255,.8) 47%, transparent 48%), linear-gradient(#cbdccc 1px, transparent 1px), linear-gradient(90deg, #cbdccc 1px, transparent 1px);
+  background-size: auto, auto, 42px 42px, 42px 42px;
+}
+
+.city-map { position: absolute; inset: 0; color: #6c8777; font: 9px "DM Mono", monospace; letter-spacing: .04em; }
+.district { position: absolute; opacity: .82; text-transform: uppercase; }
+.district-one { top: 64px; right: 38px; }
+.district-two { bottom: 63px; left: 34px; }
+.district-three { top: 180px; left: 186px; color: #4f715e; font-size: 11px; }
+.map-road { position: absolute; display: block; border: 2px solid rgba(255,255,255,.92); border-radius: 50%; }
+.road-a { width: 500px; height: 160px; left: -75px; top: 50px; transform: rotate(-12deg); }
+.road-b { width: 395px; height: 220px; left: 40px; top: 142px; transform: rotate(45deg); }
+.road-c { width: 240px; height: 460px; left: 157px; top: -51px; transform: rotate(-25deg); }
+.road-d { width: 450px; height: 150px; left: -65px; bottom: 24px; transform: rotate(8deg); }
+.map-pin { position: absolute; z-index: 1; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50% 50% 50% 0; background: var(--ink); color: var(--mint); font-size: 14px; transform: rotate(-45deg); box-shadow: 0 4px 8px rgba(19,45,38,.2); }
+.map-pin::first-letter { transform: rotate(45deg); }
+.map-pin-one { top: 118px; right: 116px; }.map-pin-two { bottom: 95px; left: 88px; background: var(--orange); color: white; }.map-pin-three { top: 214px; left: 215px; }
+.business-card, .location-card, .walk-person, .route-line { z-index: 2; }
+
+/* Two identical groups make the ticker loop without a visible reset. */
+.ticker .ticker-track {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  animation: bindy-ticker 14s linear infinite;
+  will-change: transform;
+}
+
+.ticker .ticker-group {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex: 0 0 auto;
+  padding-right: 25px;
+}
+
+.ticker .ticker-track,
+.ticker .ticker-group {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .045em;
+}
+
+.ticker .ticker-group {
+  animation: none;
+}
+
+@keyframes bindy-ticker {
+  to { transform: translateX(-33.333333%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker .ticker-track { animation-play-state: paused; }
+}
+
+/* Compact desktop / tablet landscape */
+@media (max-width: 1000px) {
+  .shell { width: min(100% - 40px, 880px); }
+  .hero { gap: 12px; padding-top: 30px; min-height: 600px; }
+  .hero h1 { font-size: clamp(52px, 7vw, 68px); }
+  .hero-visual { transform: scale(.9); transform-origin: center center; }
+  .intro h2, .steps h2, .partners h2 { font-size: 46px; }
+  .partners { gap: 55px; }
+  .signal-grid { gap: 45px; }
+}
+
+/* Tablet portrait */
+@media (max-width: 760px) {
+  .shell { width: min(100% - 32px, 680px); }
+  .nav { height: 70px; }
+  .nav nav { display: none; }
+  .hero { grid-template-columns: 1fr; padding: 42px 0 28px; }
+  .hero-copy { text-align: center; display: flex; flex-direction: column; align-items: center; }
+  .hero-lead { max-width: 510px; }
+  .hero-visual { height: 440px; width: 100%; transform: none; margin-top: 10px; }
+  .micro-proof { margin-top: 38px; }
+  .intro { padding: 75px 0; }
+  .intro-grid, .partners, .signal-grid { grid-template-columns: 1fr; gap: 26px; }
+  .intro-grid { margin-bottom: 35px; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .feature-card { min-height: 290px; }
+  .steps { grid-template-columns: 1fr; padding-bottom: 75px; }
+  .step-list { gap: 24px; }
+  .signal { padding: 75px 0; }
+  .pipeline { width: 510px; max-width: 100%; transform: scale(.9); transform-origin: left top; margin-bottom: -28px; }
+  .partners { padding: 75px 0; }
+  .partners-visual { order: 2; }
+  .footer { height: auto; min-height: 90px; padding: 24px 0; flex-wrap: wrap; gap: 16px; }
+}
+
+/* Phone */
+@media (max-width: 620px) {
+  .nav-cta { padding: 9px 12px; font-size: 11px; }
+  .brand { font-size: 23px; }
+  .hero h1 { font-size: clamp(46px, 13vw, 60px); }
+  .hero-actions { flex-direction: column; align-items: center; margin-top: 25px; }
+  .hero-visual { height: 370px; }
+  .hero-visual .phone { transform: scale(.72); }
+  .hero-visual .sun { width: 290px; height: 290px; top: 30px; }
+  .hero-visual .orbit-one { width: 355px; height: 355px; }
+  .hero-visual .orbit-two { width: 415px; height: 415px; }
+  .ring-text { display: none; }
+  .tag-near { right: 0; top: 118px; }
+  .tag-coins { left: 0; bottom: 72px; }
+  .intro h2, .steps h2, .partners h2 { font-size: clamp(38px, 11vw, 45px); }
+  .step-list { grid-template-columns: 1fr; gap: 20px; }
+  .step-list article { min-height: 146px; }
+  .step-icon { margin: 18px 0; }
+  .signal h2 { font-size: 43px; }
+  .pipeline { transform: scale(.66); margin-bottom: -87px; }
+  .partners-visual { height: 325px; }
+  .business-card { left: 20px; top: 35px; }
+  .location-card { right: 14px; bottom: 24px; }
+  .final-inner { padding: 46px 16px 38px; }
+  .final-inner h2 { font-size: 40px; }
+  .final-inner form { flex-direction: column; gap: 5px; padding: 5px; }
+  .final-inner input, .final-inner button { width: 100%; min-height: 44px; }
+  .footer p { order: 3; width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .shell { width: min(100% - 24px, 400px); }
+  .nav-cta { font-size: 0; width: 38px; height: 38px; display: grid; place-items: center; padding: 0; }
+  .nav-cta span { font-size: 16px; margin: 0; }
+  .hero-visual { height: 335px; }
+  .hero-visual .phone { transform: scale(.64); }
+  .hero-visual .orbit-two { display: none; }
+  .tag-near { transform: scale(.86); transform-origin: right; }
+  .tag-coins { transform: scale(.86); transform-origin: left; }
+  .pipeline { transform: scale(.56); margin-bottom: -118px; }
+  .partners-visual { height: 300px; }
+  .business-card { transform: scale(.86) rotate(-5deg); transform-origin: top left; }
+  .location-card { transform: scale(.88); transform-origin: bottom right; }
+}
